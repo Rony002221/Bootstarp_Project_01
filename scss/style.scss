@@ -1,0 +1,141 @@
+$dark-overlay: rgba(0,0,0,0.7);
+$icon-size: 50px;
+
+.navbar{
+  background: #000;
+  .nav-link{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+}
+
+.carousel-item{
+  height: 450px;
+}
+.carousel-img-1{
+  background: url('../img/image1.jpeg');
+  background-size: cover;
+}
+.carousel-img-2{
+  background: url('../img/image2.jpeg');
+  background-size: cover;
+}
+.carousel-img-3{
+  background: url('../img/image3.jpeg');
+  background-size: cover;
+}
+
+#home-icon{
+  .fa{
+    font-size: $icon-size;
+  }
+}
+
+#home-getstarted{
+  position: relative;
+  background: url('../img/pc.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 250px;
+
+  .dark-overlay{
+    background: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#home-video{
+  position: relative;
+  background: url('../img/people.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 250px;
+
+  .fa{
+    font-size: $icon-size;
+  }
+  .dark-overlay{
+    background: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#gallery{
+  img{
+    min-height: 250px;
+  }
+}
+
+#copyright{
+  background: #000;
+}
+
+/* About Page */
+#page-header{
+  background: url('../img/image2.jpeg');
+  background-size: cover;
+  height: 200px;
+  padding-top: 50px;
+  background-attachment: fixed;
+}
+#about{
+  img{
+    width: 350px;
+    height: 350px;
+  }
+}
+
+#icon-boxes{
+  .fa{
+    font-size: $icon-size;;
+  }
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #000;
+}
+
+@media(max-width: 991px){
+  #home-getstarted{
+    min-height: 350px;
+  }
+}
+@media(max-width: 575px){
+  .carousel-caption{
+    h2{
+      font-size: 36px;
+    }
+  }
+  .carousel-item{
+    .pb-5{
+        padding-bottom: 0 !important;
+    }
+  }
+  #home-getstarted{
+    h2{
+      font-size: 36px;
+      margin: 20px 0;
+    }
+  }
+}
+@media(max-width: 480px){
+  #home-getstarted{
+    min-height: 450px;
+    h2{
+      font-size: 36px !important;
+      margin: 15px 0;
+    }
+  }
+}
